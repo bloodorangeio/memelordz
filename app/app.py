@@ -15,7 +15,7 @@ def get_dad_joke():
     return data['joke']
 
 def get_image():
-    r = requests.get('https://api.giphy.com/v1/gifs/random?api_key='+GIPHY_API_KEY+'&tag=sigh', headers={'Accept': 'application/json'})
+    r = requests.get('https://api.giphy.com/v1/gifs/random?api_key='+GIPHY_API_KEY+'&tag=smile', headers={'Accept': 'application/json'})
     data = r.json()
     return data['data']['images']['original']['url']
 
@@ -28,7 +28,7 @@ def meme_page_html(text, image):
         <meta name="viewport" content="width=device-width">
         <meta name="description" content="Your home for wacky memes">
     </head>
-    <body style="text-align:center; background: -webkit-gradient(linear, left top, left bottom, from(#ff8f2e), to(#ffb498)) fixed; background: -webkit-gradient(linear, left top, left bottom, from(#2e82ff), to(#ffb498)) fixed;">
+    <body style="text-align:center; background: -webkit-gradient(linear, left top, left bottom, from(#ff8f2e), to(#ffb498)) fixed;">
         <br>
         <pre style="font-weight: bold;">
        ___        ___       __   __   __  __ 
