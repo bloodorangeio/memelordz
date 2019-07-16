@@ -15,7 +15,7 @@ def get_dad_joke():
     return data['joke']
 
 def get_image():
-    r = requests.get('https://api.giphy.com/v1/gifs/random?api_key='+GIPHY_API_KEY+'&tag=smile', headers={'Accept': 'application/json'})
+    r = requests.get('https://api.giphy.com/v1/gifs/random?api_key='+GIPHY_API_KEY+'&tag=frown', headers={'Accept': 'application/json'})
     data = r.json()
     return data['data']['images']['original']['url']
 
